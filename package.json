@@ -1,0 +1,30 @@
+{
+  "name": "travis-example-service1",
+  "version": "1.0.0",
+  "description": "In this example, we have a distributed system with two services: Service 1 and Service 2. Each service consists of a web api and possible data stores. Services are dockerized so that launching the service, and its internal stores is relatively easy with `docker-compose up`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "SERVICE2_URL=http://localhost:4000 node src/index.js",
+    "test": "bash test-whole-system.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimmobrunfeldt/travis-example-service1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimmobrunfeldt/travis-example-service1/issues"
+  },
+  "homepage": "https://github.com/kimmobrunfeldt/travis-example-service1#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
+}
