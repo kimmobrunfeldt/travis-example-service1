@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.org/kimmobrunfeldt/travis-example-service1.svg?branch=master)](https://www.travis-ci.org/kimmobrunfeldt/travis-example-service1)
+
 # Travis Example, Service 1
 
 In this example, we have a distributed system with two services: Service 1

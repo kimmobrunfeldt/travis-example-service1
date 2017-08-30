@@ -11,8 +11,7 @@ wait-port 3000
 rm -rf travis-example-service2
 git clone https://github.com/kimmobrunfeldt/travis-example-service2.git
 cd travis-example-service2
-npm install
-npm start &
+docker-compose up &
 cd ..
 wait-port 4000
 
